@@ -1,0 +1,21 @@
+/*héritages*/
+
+/*flex lvl1*/
+%flexal {
+  display: flex;
+  align-items: center;
+}
+/*--flex lvl2--*/
+%flexcental {
+  @extend %flexal;
+  justify-content: center;
+}
+%flexsbal {
+  @extend %flexal;
+  justify-content: space-between;
+}
+%flexsal {
+  @extend %flexal;
+  justify-content: space-around;
+}
+

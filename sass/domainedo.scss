@@ -1,0 +1,100 @@
+@import "variable.scss";
+@import "global.scss";
+
+body {
+  @extend %flexcental;
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+header {
+  nav {
+    width: 100vw;
+    .row1 {
+      @extend %flexsbal;
+      .col-3 {
+        @extend %flexsal;
+        width: 100%;
+        .icns {
+          width: 70%;
+          @extend %flexcental;
+          i {
+            padding-left: 10px;
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+        .btns {
+          width: 100%;
+          @extend %flexsal;
+          .button-header {
+            @extend %flexsbal;
+            border: 2px solid $orange;
+            background-color: white;
+            border-radius: 5px;
+            &:hover {
+              background-color: $orange;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .row2 {
+      margin-top: 20px;
+      width: 100%;
+      @extend %flexsbal;
+      .col-3 {
+        @extend %flexsal;
+        width: 30%;
+        .menu {
+          width: 70%;
+          @extend %flexcental;
+          flex-direction: column;
+          color: $orange;
+        }
+        ul {
+          @extend %flexsbal;
+          width: 150%;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+              &:hover {
+                color: $orange;
+              }
+            }
+          }
+        }
+        .find {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      #last {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        width: 20%;
+      }
+      #midle {
+        width: 80%;
+      }
+    }
+  }
+}
